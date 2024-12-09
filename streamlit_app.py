@@ -2,10 +2,10 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 
-# Set page configuration at the very beginning of the script
+# Setel konfigurasi halaman di awal skrip
 st.set_page_config(page_title="Pengelolaan Keuangan Pribadi", layout="wide")
 
-# CSS for Background Animation and Theme
+# CSS untuk Animasi Latar Belakang dan Tema
 st.markdown(
     """
     <style>
@@ -34,7 +34,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# HTML for Background Animation
+# HTML untuk Animasi Latar Belakang
 components.html(
     """
     <div class="bg-animation"></div>
@@ -142,7 +142,3 @@ elif pilihan == "Ganti Tema":
             """,
             unsafe_allow_html=True,
         )
-
-# Menjalankan aplikasi Streamlit
-if __name__ == '__main__':
-    st.set_page_config(page_title="Pengelolaan Keuangan Pribadi")
